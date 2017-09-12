@@ -1,0 +1,10 @@
+安装MySQL  
+安装php
+promisifyAll(require('mysql/bin/Connection').prototype
+
+create database cnonde
+
+在wamp的MySQL控制台，敲下回车
+eventproxy  处理并发
+
+引入中间件

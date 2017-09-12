@@ -1,0 +1,72 @@
+/* encod */
+*{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	color: red;
+}
+.main{
+	width: 1000px;
+	margin: 10px auto;
+	margin-left: 20px;
+}
+.artcle_box {
+	width: 1000px;
+	list-style: none;
+	margin: 10px auto;
+}
+.artcle_box a{
+	font-size: 18px;
+}
+ 
+.page_list li{
+	float: left;
+	margin: 0 10px;
+}
+
+
+
+/* encode_artci */
+.commit_box{
+	margin: 20px 50px;
+}
+
+.commit_box li.list {
+	border: 1px solid #ccc;
+	padding: 15px 10px;
+	margin: 5px 0;
+
+}
+.commit_box li.list p{
+	line-height: 28px;
+	
+}
+.commit_box li.list p.con{
+	margin-left: 20px;
+}
+
+ input.user{
+ padding: 5px 10px;
+ display: block;
+ margin-bottom: 15px;
+}
+.commit_box textarea{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.commit_box .subtn{
+	background-color: #4C9ED9;
+	color: #fff;
+	border: 0px;
+	line-height: 28px
+	display:block;
+}

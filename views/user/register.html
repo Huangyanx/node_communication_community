@@ -1,0 +1,16 @@
+<%-include('../public/header.html')%>
+    <div class="main">
+    		<h1><%=title%></h1>
+        	<form action="/user/register" method="post">
+        		<%if(typeof(message)!='undefined'){ %>
+        			<p><%=message%></p> 
+        		 <%}%>
+				<input placeholder="请输入用户名/邮箱/手机号" name="user_name" required="required" class="user">
+				<input placeholder="请输入6到18为的密码" name="user_pwd" class="user" required="required" type='password'>
+				<input type="submit" value="注册" class="subtn">
+			</form>
+	</div>
+
+
+</body>
+</html>

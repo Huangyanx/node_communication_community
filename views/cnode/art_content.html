@@ -1,0 +1,31 @@
+<%-include('../public/header.html')%>
+    <div class="main">
+    	<h1>文章详情</h1>
+		<p><%-artcle_con['content']%></p>
+        <div class="commit_box">
+        	<div class="commit_con_box"> 
+	        	<h1>畅所欲言</h1>
+	    		<ul>
+	    			<% if (!info_commit){%>
+	    			<p>你的评论是我们动力</p>
+	    			<% }else{%>
+	    				<% for(var i in info_commit) {%>
+	    				<li class='list'>
+	    					<p><%-info_commit[i].user_name%> at <%-info_commit[i].create_time%></p>
+	    					<p class="con">评论：<%- info_commit[i].commit_content %></p>
+	    				</li>
+	    			<% }}%>
+	    			
+
+	    		</ul>
+        	</div>
+        	
+        	<form action="/cnode/post_commt/<%=id %>" method="post">
+				<input placeholder="请输入用户名" name="user_name" class="user">
+				<textarea rows="8" cols="40" name="commit" placeholder="请输入评论内容"></textarea>
+				<input type="submit" value="提交评论" class="subtn">
+			</form>
+		</div>
+	</div>
+
+ <%-include('../public/footer.html')%>

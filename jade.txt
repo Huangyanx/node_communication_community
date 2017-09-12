@@ -1,0 +1,15 @@
+jade.compile()   传参
+jade.renderFile()
+
+301永久
+302 临时
+
+res.writeHead(302,'location':'url')
+
+安装express框架
+express
+ejs 0.4.2  JavaScript可以直接嵌套在HTML里面
+supersgent
+
+
+route  通过不同的URL 去到不同的ip地址

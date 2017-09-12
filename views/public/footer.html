@@ -1,0 +1,13 @@
+
+		<% if(!curr_user){%>
+		<br><a href="/user/login">登陆 </a>|<a href="/user/register ">注册 </a>
+		
+		<% }else{ %>
+		
+		<br><%=curr_user.user_name%>|&nbsp;<a href="/cnode/topic">话题社区</a>|&nbsp;<a href="/user/logout">退出 </a>
+		<%}%>
+
+
+
+</body>
+</html>

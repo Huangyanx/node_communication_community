@@ -1,0 +1,40 @@
+
+<%-include('../includes/head.html')%>
+
+<div class="rows">
+	<div class="col">
+		<a href="/topic/add" class="btn btn-success">发布话题</a>
+	</div>
+</div>
+<div class="index_content_box register_box">
+
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<td>话题</td>
+				<td>创建时间</td>
+				<td>操作</td>
+			</tr>
+		</thead>
+		<tbody>
+			<% for(i in result){ %>
+			<tr>
+				<td>
+					<a href="/topic/<%=result[i].id %>
+						">
+						<%-result[i].article_title %></a>
+				</td>
+				<td>
+					<%-result[i].add_time %></td>
+				<td>
+					<a href="/topic/edit/<%=result[i].id %>" class="btn btn-info">修改</a>
+
+					<a href="/topic/del/<%=result[i].id %>" class="btn btn-danger">删除</a>
+				</td>
+			</tr>
+
+			<% } %></tbody>
+	</table>
+</div>
+
+<%-include('../includes/foot.html')%>

@@ -1,0 +1,48 @@
+express：
+概述：express是目前最流行的基于nodejs的尾web开发框架
+
+
+
+app.get('/search/:keywords',function(req,res){
+	//搜索页面
+	res.render('search');
+
+})里面的： 为占位符  keyword为变量
+
+encodeURL  转译编码 中文字符转成16进制   使浏览器编译  
+
+路由  接受参数 响应页面   mvc
+
+use   除了在回调函数内部判断请求的网址，use方法也允许将请求网址写在第一个参数。这代表，只有请求路径匹配这个参数，后面的中间件才会生效。无疑，这样写更加清晰和方便。
+
+<%-code  %> 不被转义
+
+--save-dev
+
+
+
+社区：用户发布话题  ，评论，编辑个人资料
+TCP 聊天程序，socket 即时的聊天程序
+
+include（） 引入
+
+//捕获错误
+app.use(function(req,res,next){
+
+
+})
+
+
+body_parser  获取post传过来的参数
+
+stack  错误详情
+
+body_parser  要放在路由中间件前面
+
+
+
+安装bluebird   promise es6
+
+安装MySQL软件
+
+express_session  安装

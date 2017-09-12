@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<script type="text/javascript" src="/js/main.js"></script>
+	<title><%=title  %></title>
+	</head>
+<body>
+	<div class="main">
+		<h1>文章标题列表</h1>
+		<form action="search" method="post">
+			<input placeholder="请输入关键字" name="keyword">
+			<input type="submit" value="搜索">
+		</form>
+		<ul class="artcle_box">
+			<% for(var i in artcle){ %>
+				<li><a href="info/?id=<%-artcle[i].i %>"> <%-artcle[i].title  %> </a></li>
+			<% } %>
+		</ul>
+		<ul class="page_list"><%-page_list  %></ul>
+
+
+</body>
+</html>
